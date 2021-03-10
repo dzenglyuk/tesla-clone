@@ -1,0 +1,22 @@
+import { StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+  container: {
+    width: "100%",
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+  },
+  button: {
+    height: 40,
+    borderRadius: 20,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  text: {
+    fontSize: 12,
+    fontWeight: "700",
+    textTransform: "uppercase",
+  },
+});
+
+export default styles;

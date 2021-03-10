@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, ImageBackground } from "react-native";
+import CustomButton from "../CustomButton";
 import styles from "./styles";
 
 const CarItem = ({ image, title, subtitle }) => {
@@ -13,6 +14,21 @@ const CarItem = ({ image, title, subtitle }) => {
         <Text style={styles.title}>Model S</Text>
         <Text style={styles.subtitle}>Starting at $69,420</Text>
       </View>
+
+      <CustomButton
+        type="primary"
+        text="Custom Order"
+        onPress={() => {
+          console.log("Custom Order");
+        }}
+      />
+      <CustomButton
+        type="secondary"
+        text="Existing Inventory"
+        onPress={() => {
+          console.log("Existing Inventory");
+        }}
+      />
     </View>
   );
 };
