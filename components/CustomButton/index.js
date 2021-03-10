@@ -38,10 +38,14 @@ const CustomButton = ({ type, text, onPress }) => {
 
 CustomButton.defaultProps = {
   type: "primary",
+  text: "Custom Order",
+  onPress: () => {},
 };
 
 CustomButton.propTypes = {
   type: PropTypes.oneOf(["primary", "secondary"]),
+  text: PropTypes.string.isRequired,
+  onPress: PropTypes.func.isRequired,
 };
 
 export default CustomButton;
